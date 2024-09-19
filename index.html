@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>  
+    <title>Notiz App</title>
+</head>
+<body onload="includeHTML(); load(); render(); loadTrash(); checkTrashStatus(); renderTrash()">
+    <!-- Header -->
+    <div w3-include-html="./templates/header.html"></div>
+      <!-- Notizen -->
+    <main class="mainContainer"> 
+        <div class="content" id="content"></div>  
+        <div class="trashContent" id="trash"></div> 
+    </main>
+</body>
+</html>
